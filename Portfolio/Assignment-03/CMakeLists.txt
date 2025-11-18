@@ -2,11 +2,11 @@
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # "ON" = build Option 1, "OFF" = build Option 2.
-option(BUILD_ASSIGNMENT_03_OPTION_1 "Build Assignment Option 1 (Standard)" ON)
+option(BUILD_ASSIGNMENT_03_OPTION_1 "Build Assignment Option 1 (Standard)" OFF)
 
 add_executable(Assignment-03
     main.cpp
-)
+   "ExpressionTree.cpp")
 
 # Conditionally add the correct source file
 if(BUILD_ASSIGNMENT_03_OPTION_1)

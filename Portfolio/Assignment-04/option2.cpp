@@ -30,9 +30,6 @@ static bool EdgeReadCallback(const int aIndex, const int aTotalCount, const std:
 
 int RunApp()
 {
-
-	std::cout << AssignmentOption << std::endl;
-
 	// Path to the graph data file
 	std::string filename = "F:\\IKT203\\VisualStudio\\DATA\\city_graph.txt";
 

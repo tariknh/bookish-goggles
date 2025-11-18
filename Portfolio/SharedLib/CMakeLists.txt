@@ -19,6 +19,7 @@ target_sources(SharedLib
     ReadGraph.cpp
     ReadSongs.cpp
     FileReaderUtils.cpp
+    BinarySearchTable.hpp
 
 )
 
