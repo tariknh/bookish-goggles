@@ -20,6 +20,7 @@ target_sources(SharedLib
     ReadSongs.cpp
     FileReaderUtils.cpp
     BinarySearchTable.hpp
+    PriorityQueue.hpp
 
 )
 

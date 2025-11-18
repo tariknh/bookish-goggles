@@ -6,7 +6,7 @@ option(BUILD_ASSIGNMENT_04_OPTION_1 "Build Assignment Option 1 (Standard)" OFF)
 
 add_executable(Assignment-04
     main.cpp
-)
+ "Graph.h" "Graph.cpp")
 
 if(BUILD_ASSIGNMENT_04_OPTION_1)
     target_sources(Assignment-04
