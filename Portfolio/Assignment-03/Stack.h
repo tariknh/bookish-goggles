@@ -35,12 +35,9 @@ public:
         count--;
     }
 
-    // Returns the data at the top without removing it
     T peek() {
         if (isEmpty()) {
-            // In a real scenario, you might throw an exception here.
-            // For this assignment, assume we check isEmpty() before peeking.
-            // Returning a default-constructed T is a safe fallback.
+           
             return T(); 
         }
         return topNode->data;

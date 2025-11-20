@@ -6,10 +6,8 @@
 #include <iostream>
 #include <vector>
 
-// CHANGE 1: Include the RedBlackTree header, not BinarySearchTable
 #include "RedBlackTree.hpp" 
 
-// Enum to identify node types
 enum class ENodeType {
     OPERAND,    // Numbers
     OPERATOR,   // +, -, *, /, ^
@@ -17,7 +15,6 @@ enum class ENodeType {
     FUNCTION    // sin, cos, etc.
 };
 
-// The Tree Node
 struct TExpressionNode {
     ENodeType type;
     double value;       
@@ -43,10 +40,8 @@ private:
     const std::string* expression;
     size_t pos;
 
-    // --- Helpers ---
     void DeleteSubtree(TExpressionNode* aNode);
 
-    // --- Parser ---
     char Peek();
     char Get();
     bool Match(char aExpected);
@@ -59,7 +54,6 @@ private:
     double ParseNumber();
     std::string ParseName();
 
-    // CHANGE 2: Update the parameter type here to TRedBlackTree
     double EvaluateNode(TExpressionNode* aNode, const TRedBlackTree<double>& aSymTable) const;
 
 public:
@@ -68,7 +62,6 @@ public:
 
     bool BuildTree(const std::string& aExpression);
 
-    // CHANGE 3: Update the parameter type here to TRedBlackTree
     double Evaluate(const TRedBlackTree<double>& aSymTable) const;
 };
 

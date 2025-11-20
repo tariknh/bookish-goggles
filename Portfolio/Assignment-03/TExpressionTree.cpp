@@ -1,12 +1,10 @@
 #include "TExpressionTree.h"
-#include <cctype>   // isdigit, isalpha, isspace
-#include <cmath>    // pow, sin, cos, log, etc.
-#include <stdexcept> // runtime_error
+#include <cctype>  
+#include <cmath>   
+#include <stdexcept> 
 #include "RedBlackTree.hpp"
 
-// =========================================================
-// Constructor / Destructor
-// =========================================================
+
 
 TExpressionTree::TExpressionTree() 
     : root(nullptr), expression(nullptr), pos(0) {
@@ -17,7 +15,6 @@ TExpressionTree::~TExpressionTree() {
 }
 
 void TExpressionTree::DeleteSubtree(TExpressionNode* aNode) {
-    // Post-order deletion: Left, Right, then Root
     if (!aNode) return;
 
     DeleteSubtree(aNode->left);
@@ -26,27 +23,20 @@ void TExpressionTree::DeleteSubtree(TExpressionNode* aNode) {
     delete aNode;
 }
 
-// =========================================================
-// Public Interface
-// =========================================================
+
 
 bool TExpressionTree::BuildTree(const std::string& aExpression) {
-    // 1. Cleanup old tree
     DeleteSubtree(root);
     root = nullptr;
 
-    // 2. Reset parser state
     expression = &aExpression;
     pos = 0;
 
-    // 3. Start parsing
     try {
         root = ParseExpression();
 
-        // Check if we consumed the whole string (ignoring trailing spaces)
         SkipWhitespace();
         if (Peek() != '\0') {
-            // Found unexpected characters at the end
             DeleteSubtree(root);
             root = nullptr;
             return false;
@@ -54,7 +44,6 @@ bool TExpressionTree::BuildTree(const std::string& aExpression) {
         return true;
 
     } catch (...) {
-        // If any parsing error occurs, clean up and fail
         DeleteSubtree(root);
         root = nullptr;
         return false;
@@ -68,23 +57,15 @@ double TExpressionTree::Evaluate(const TRedBlackTree<double>& aSymTable) const {
     return EvaluateNode(root, aSymTable);
 }
 
-// =========================================================
-// Evaluation Logic (Recursive)
-// =========================================================
 
 double TExpressionTree::EvaluateNode(TExpressionNode* aNode, const TRedBlackTree<double>& aSymTable) const {
     if (!aNode) return 0.0;
 
-    // CASE 1: Numbers
     if (aNode->type == ENodeType::OPERAND) {
         return aNode->value;
     }
 
-    // CASE 2: Variables
     if (aNode->type == ENodeType::VARIABLE) {
-        // Look up in the template symbol table
-        // Assuming your BST has a Search method that throws or returns a value
-        // Adjust 'Search' to whatever your BST method is named (e.g., get, find)
         try {
             return aSymTable.Search(aNode->name); 
         } catch (...) {
@@ -92,7 +73,6 @@ double TExpressionTree::EvaluateNode(TExpressionNode* aNode, const TRedBlackTree
         }
     }
 
-    // CASE 3: Operators
     if (aNode->type == ENodeType::OPERATOR) {
         double leftVal = EvaluateNode(aNode->left, aSymTable);
         double rightVal = EvaluateNode(aNode->right, aSymTable);
@@ -109,9 +89,7 @@ double TExpressionTree::EvaluateNode(TExpressionNode* aNode, const TRedBlackTree
         }
     }
 
-    // CASE 4: Functions
     if (aNode->type == ENodeType::FUNCTION) {
-        // Functions usually have the argument in the LEFT child
         double arg = EvaluateNode(aNode->left, aSymTable);
         
         if (aNode->name == "sin") return std::sin(arg);
@@ -131,9 +109,7 @@ double TExpressionTree::EvaluateNode(TExpressionNode* aNode, const TRedBlackTree
     return 0.0;
 }
 
-// =========================================================
-// Parser Helpers
-// =========================================================
+
 
 char TExpressionTree::Peek() {
     if (pos >= expression->length()) return '\0';
@@ -161,11 +137,7 @@ void TExpressionTree::SkipWhitespace() {
     }
 }
 
-// =========================================================
-// Recursive Descent Grammar Implementation
-// =========================================================
 
-// Grammar: Expression -> Term { (+|-) Term }
 TExpressionNode* TExpressionTree::ParseExpression() {
     TExpressionNode* left = ParseTerm();
 
@@ -173,10 +145,9 @@ TExpressionNode* TExpressionTree::ParseExpression() {
         SkipWhitespace();
         char c = Peek();
         if (c == '+' || c == '-') {
-            Get(); // Consume operator
+            Get(); 
             TExpressionNode* right = ParseTerm();
             
-            // Create a new parent node for this operation
             TExpressionNode* parent = new TExpressionNode(c, left, right);
             left = parent; // The new parent becomes the left child for the next op
         } else {
@@ -186,7 +157,6 @@ TExpressionNode* TExpressionTree::ParseExpression() {
     return left;
 }
 
-// Grammar: Term -> Factor { (*|/|^) Factor }
 TExpressionNode* TExpressionTree::ParseTerm() {
     TExpressionNode* left = ParseFactor();
 
@@ -194,10 +164,9 @@ TExpressionNode* TExpressionTree::ParseTerm() {
         SkipWhitespace();
         char c = Peek();
         if (c == '*' || c == '/' || c == '^') {
-            Get(); // Consume operator
+            Get(); // We take the operator
             TExpressionNode* right = ParseFactor();
 
-            // Create parent node
             TExpressionNode* parent = new TExpressionNode(c, left, right);
             left = parent;
         } else {
@@ -207,12 +176,10 @@ TExpressionNode* TExpressionTree::ParseTerm() {
     return left;
 }
 
-// Grammar: Factor -> Number | (Expression) | Variable | Function
 TExpressionNode* TExpressionTree::ParseFactor() {
     SkipWhitespace();
     char c = Peek();
 
-    // 1. Parentheses
     if (Match('(')) {
         TExpressionNode* node = ParseExpression();
         if (!Match(')')) {
@@ -223,20 +190,17 @@ TExpressionNode* TExpressionTree::ParseFactor() {
         return node;
     }
 
-    // 2. Numbers
     if (isdigit(c) || c == '.') {
         double val = ParseNumber();
         return new TExpressionNode(val);
     }
 
-    // 3. Variables or Functions
     if (isalpha(c)) {
         std::string name = ParseName();
         
-        // Check if it is a function call, e.g., sin(...)
         SkipWhitespace();
         if (Peek() == '(') {
-            // It's a function!
+            // Means its a function
             Match('('); // Consume '('
             TExpressionNode* arg = ParseExpression(); // Argument is the expression inside
             if (!Match(')')) {
@@ -244,7 +208,6 @@ TExpressionNode* TExpressionTree::ParseFactor() {
                 throw std::runtime_error("Missing closing parenthesis for function");
             }
             
-            // Create Function Node: Name=funcName, Type=FUNCTION, Left=Argument
             TExpressionNode* funcNode = new TExpressionNode(name, ENodeType::FUNCTION);
             funcNode->left = arg; 
             return funcNode;
@@ -255,9 +218,8 @@ TExpressionNode* TExpressionTree::ParseFactor() {
         }
     }
 
-    // 4. Handling negative numbers (Unary minus)
     if (c == '-') {
-        Get(); // Consume minus
+        Get(); // Take the minus
         TExpressionNode* right = ParseFactor();
         // Represent -X as (0 - X)
         return new TExpressionNode('-', new TExpressionNode(0.0), right);
@@ -270,7 +232,7 @@ double TExpressionTree::ParseNumber() {
     SkipWhitespace();
     size_t startPos = pos;
     
-    // Consume digits and optional dot
+    // Take digits and optional dot
     bool dotFound = false;
     while (pos < expression->length()) {
         char c = (*expression)[pos];
@@ -293,7 +255,6 @@ std::string TExpressionTree::ParseName() {
     SkipWhitespace();
     size_t startPos = pos;
     
-    // Consume alphanumeric chars
     while (pos < expression->length() && isalnum((*expression)[pos])) {
         pos++;
     }

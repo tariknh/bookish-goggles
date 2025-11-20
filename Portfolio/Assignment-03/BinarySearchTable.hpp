@@ -6,13 +6,13 @@
 #include <stdexcept>
 #include <iostream>
 
-// Template class so it can store doubles, ints, or anything else
+// Template class so it can store doubles, ints, or anything else WE MIGht but in the calculator
 template <typename T>
 class TBinarySearchTable {
 private:
     struct Node {
-        std::string key; // The variable name (e.g., "x")
-        T value;         // The value (e.g., 10.5)
+        std::string key; // Fore example x
+        T value;         // The value we set the var to
         Node* left;
         Node* right;
 
@@ -21,20 +21,17 @@ private:
 
     Node* root;
 
-    // --- Helper: Recursive Insert ---
     Node* InsertRecursive(Node* node, std::string key, T value) {
-        // 1. Base Case: Found a spot, create new node
+        //base case
         if (node == nullptr) {
             return new Node(key, value);
         }
 
-        // 2. Update value if key already exists
         if (key == node->key) {
             node->value = value;
             return node;
         }
 
-        // 3. Recurse down the tree
         if (key < node->key) {
             node->left = InsertRecursive(node->left, key, value);
         } else {
@@ -50,10 +47,9 @@ private:
     void ListAll() const {
         ListAllHelper(root);
     }
-    // --- Helper: Recursive Search ---
     const Node* SearchRecursive(Node* node, const std::string& key) const {
         if (node == nullptr) {
-            return nullptr; // Not found
+            return nullptr; 
         }
 
         if (key == node->key) {
@@ -67,7 +63,6 @@ private:
         }
     }
 
-    // --- Helper: Recursive Delete (Destructor) ---
     // This is post order deletion
     void ClearRecursive(Node* node) {
         if (node == nullptr) return;
@@ -77,21 +72,17 @@ private:
     }
 
 public:
-    // Constructor
     TBinarySearchTable() : root(nullptr) {}
 
-    // Destructor
     ~TBinarySearchTable() {
         ClearRecursive(root);
     }
 
-    // Public Insert
     void Insert(const std::string& key, T value) {
         root = InsertRecursive(root, key, value);
     }
 
-    // Public Search
-    // Returns the value if found, or throws an exception if missing
+    // The public search. Returns the value if found, or throws an exception if missing
     T Search(const std::string& key) const {
         const Node* result = SearchRecursive(root, key);
         if (result == nullptr) {
@@ -100,7 +91,6 @@ public:
         return result->value;
     }
 
-    // Check if a key exists without throwing
     bool Contains(const std::string& key) const {
         return SearchRecursive(root, key) != nullptr;
     }

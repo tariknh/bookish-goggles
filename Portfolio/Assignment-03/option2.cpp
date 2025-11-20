@@ -1,14 +1,12 @@
 #include <iostream>
 #include <string>
-#include <algorithm> // For simple string trimming
+#include <algorithm> 
 
-// --- YOUR CUSTOM HEADERS ---
-#include "TExpressionTree.h"    // The Calculator Logic
- #include "RedBlackTree.hpp"     // The Symbol Table (+50 Pts Extra Credit)
- #include "AVLTree.hpp"          // The AVL Delete Demo (+50 Pts Extra Credit)
+#include "TExpressionTree.h"  
+ #include "RedBlackTree.hpp"     
+ #include "AVLTree.hpp"         
 
-// --- Helper Function to Clean Strings ---
-// Removes spaces from start and end of a string
+//string cleaner
 std::string Trim(const std::string& str) {
     size_t first = str.find_first_not_of(' ');
     if (std::string::npos == first) return str;
@@ -52,15 +50,14 @@ void RunAVLDemo() {
 }
 
 int RunApp() {
-    // 1. Instantiate Core Systems
-    // Using RedBlackTree instead of standard BST for Extra Credit!
+   
     TRedBlackTree<double> symbolTable; 
     TExpressionTree calculator;
 
     std::cout << "--- Assignment 3: Interpreted Calculator ---\n";
-    std::cout << "---     (With RBT & AVL Extra Credit)    ---\n";
+    std::cout << "---     (With RBT & AVL)    ---\n";
     
-    // Pre-load some constants
+    // Here we just pre-make some constants :)
     symbolTable.Insert("pi", 3.14159265);
     symbolTable.Insert("e", 2.71828182);
     
@@ -73,7 +70,6 @@ int RunApp() {
         if (inputLine == "exit") break;
         if (inputLine.empty()) continue;
 
-        // --- PARSING COMMANDS ---
 
         if (inputLine.substr(0, 4) == "help") {
             PrintHelp();
@@ -102,12 +98,9 @@ int RunApp() {
             }
         }
         else if (inputLine.substr(0, 4) == "calc") {
-            // Format: "calc (x+10)*5"
             std::string expr = inputLine.substr(4); // Skip "calc"
             
-            // 1. Build the Tree
             if (calculator.BuildTree(expr)) {
-                // 2. Evaluate using the Symbol Table
                 try {
                     double result = calculator.Evaluate(symbolTable);
                     std::cout << "   Result: " << result << std::endl;
@@ -119,7 +112,7 @@ int RunApp() {
             }
         }
 		else if (inputLine.substr(0, 4) == "vars"){
-			std::string expr = inputLine.substr(4); // Skip "calc"
+			std::string expr = inputLine.substr(4); // Skip "vars"
 
 			symbolTable.PrintInOrder();
 		}
