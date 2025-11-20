@@ -44,6 +44,12 @@ private:
         return node;
     }
 
+    void ListallHelper(){
+
+    }
+    void ListAll() const {
+        ListAllHelper(root);
+    }
     // --- Helper: Recursive Search ---
     const Node* SearchRecursive(Node* node, const std::string& key) const {
         if (node == nullptr) {
@@ -62,6 +68,7 @@ private:
     }
 
     // --- Helper: Recursive Delete (Destructor) ---
+    // This is post order deletion
     void ClearRecursive(Node* node) {
         if (node == nullptr) return;
         ClearRecursive(node->left);

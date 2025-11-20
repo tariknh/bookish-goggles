@@ -1,0 +1,17 @@
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/CMakeFiles/rebuild_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-01/CMakeFiles/Assignment-01.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-01/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-01/CMakeFiles/rebuild_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-02/CMakeFiles/Assignment-02.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-02/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-02/CMakeFiles/rebuild_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-03/CMakeFiles/Assignment-03.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-03/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-03/CMakeFiles/rebuild_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-04/CMakeFiles/Assignment-04.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-04/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-04/CMakeFiles/rebuild_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/SharedLib/CMakeFiles/SharedLib.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/SharedLib/CMakeFiles/edit_cache.dir
+/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/SharedLib/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_01_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-01/CMakeFiles/Assignment-01.dir/main.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/main.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/main.cpp",
+  "output": "Assignment-01/CMakeFiles/Assignment-01.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_01_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-01/CMakeFiles/Assignment-01.dir/song.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/song.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/song.cpp",
+  "output": "Assignment-01/CMakeFiles/Assignment-01.dir/song.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_01_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-01/CMakeFiles/Assignment-01.dir/songList.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/songList.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/songList.cpp",
+  "output": "Assignment-01/CMakeFiles/Assignment-01.dir/songList.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_01_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-01/CMakeFiles/Assignment-01.dir/option2.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/option2.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-01/option2.cpp",
+  "output": "Assignment-01/CMakeFiles/Assignment-01.dir/option2.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_02_OPTION=1 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-02/CMakeFiles/Assignment-02.dir/main.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/main.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/main.cpp",
+  "output": "Assignment-02/CMakeFiles/Assignment-02.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_02_OPTION=1 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-02/CMakeFiles/Assignment-02.dir/DirectoryTypes.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/DirectoryTypes.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/DirectoryTypes.cpp",
+  "output": "Assignment-02/CMakeFiles/Assignment-02.dir/DirectoryTypes.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_02_OPTION=1 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-02/CMakeFiles/Assignment-02.dir/option1.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/option1.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-02/option1.cpp",
+  "output": "Assignment-02/CMakeFiles/Assignment-02.dir/option1.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_03_OPTION=1 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-03/CMakeFiles/Assignment-03.dir/main.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-03/main.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-03/main.cpp",
+  "output": "Assignment-03/CMakeFiles/Assignment-03.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_03_OPTION=1 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-03/CMakeFiles/Assignment-03.dir/option1.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-03/option1.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-03/option1.cpp",
+  "output": "Assignment-03/CMakeFiles/Assignment-03.dir/option1.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_04_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-04/CMakeFiles/Assignment-04.dir/main.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-04/main.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-04/main.cpp",
+  "output": "Assignment-04/CMakeFiles/Assignment-04.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -DASSIGNMENT_04_OPTION=2 -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -std=gnu++17 -arch arm64 -o Assignment-04/CMakeFiles/Assignment-04.dir/option2.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-04/option2.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/Assignment-04/option2.cpp",
+  "output": "Assignment-04/CMakeFiles/Assignment-04.dir/option2.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -arch arm64 -o SharedLib/CMakeFiles/SharedLib.dir/ReadNames.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadNames.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadNames.cpp",
+  "output": "SharedLib/CMakeFiles/SharedLib.dir/ReadNames.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -arch arm64 -o SharedLib/CMakeFiles/SharedLib.dir/ReadGraph.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadGraph.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadGraph.cpp",
+  "output": "SharedLib/CMakeFiles/SharedLib.dir/ReadGraph.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -arch arm64 -o SharedLib/CMakeFiles/SharedLib.dir/ReadSongs.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadSongs.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/ReadSongs.cpp",
+  "output": "SharedLib/CMakeFiles/SharedLib.dir/ReadSongs.cpp.o"
+},
+{
+  "directory": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+  "command": "/usr/bin/clang++ -I/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib -g -arch arm64 -o SharedLib/CMakeFiles/SharedLib.dir/FileReaderUtils.cpp.o -c /Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/FileReaderUtils.cpp",
+  "file": "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/SharedLib/FileReaderUtils.cpp",
+  "output": "SharedLib/CMakeFiles/SharedLib.dir/FileReaderUtils.cpp.o"
+}
+]

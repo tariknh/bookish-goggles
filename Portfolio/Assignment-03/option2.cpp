@@ -22,6 +22,7 @@ void PrintHelp() {
     std::cout << "  calc <expression>   : Evaluate math (e.g. 'calc (x + 5) * 2')\n";
     std::cout << "  demo_avl            : Run the AVL Delete Extra Credit Demo\n";
     std::cout << "  help                : Show this menu\n";
+    std::cout << "  vars                : Print variables\n";
     std::cout << "  exit                : Quit\n";
     std::cout << "------------------------------------------------------------\n";
 }
@@ -117,6 +118,11 @@ int RunApp() {
                 std::cout << "   Syntax Error: Check parentheses or operators." << std::endl;
             }
         }
+		else if (inputLine.substr(0, 4) == "vars"){
+			std::string expr = inputLine.substr(4); // Skip "calc"
+
+			symbolTable.PrintInOrder();
+		}
         else {
             std::cout << "   Unknown command. Type 'help' for list." << std::endl;
         }

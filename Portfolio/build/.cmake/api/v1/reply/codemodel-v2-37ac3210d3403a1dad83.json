@@ -1,0 +1,176 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Assignment-01",
+					"jsonFile" : "directory-Assignment-01-Debug-5d35bd9d2dac52ebc3de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Assignment-01",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Assignment-02",
+					"jsonFile" : "directory-Assignment-02-Debug-652d63c84ea1e8b9fe63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Assignment-02",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Assignment-03",
+					"jsonFile" : "directory-Assignment-03-Debug-3584d67065ec9d33e325.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Assignment-03",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Assignment-04",
+					"jsonFile" : "directory-Assignment-04-Debug-d430f442b6e3abad3dbc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Assignment-04",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "SharedLib",
+					"jsonFile" : "directory-SharedLib-Debug-f935f0a62fe09ca9957d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "SharedLib",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "Portfolio",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Assignment-01::@64db51a7e5ae2ce38995",
+					"jsonFile" : "target-Assignment-01-Debug-7c7946a97389b27429a1.json",
+					"name" : "Assignment-01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Assignment-02::@e73aeb402c91ed1a3335",
+					"jsonFile" : "target-Assignment-02-Debug-084ab6c9ebba2a0a82ab.json",
+					"name" : "Assignment-02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Assignment-03::@b09be0a29a853953bf2c",
+					"jsonFile" : "target-Assignment-03-Debug-fa17d4c689aebb641f3a.json",
+					"name" : "Assignment-03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Assignment-04::@5e3237bb1fe008d0f0b7",
+					"jsonFile" : "target-Assignment-04-Debug-c12a5f20f76674cad798.json",
+					"name" : "Assignment-04",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SharedLib::@2198cff610bed109ca80",
+					"jsonFile" : "target-SharedLib-Debug-d707f9b694081ffcd5f3.json",
+					"name" : "SharedLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build",
+		"source" : "/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

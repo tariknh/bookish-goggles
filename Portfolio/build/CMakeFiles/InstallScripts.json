@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/cmake_install.cmake",
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-01/cmake_install.cmake",
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-02/cmake_install.cmake",
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-03/cmake_install.cmake",
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/Assignment-04/cmake_install.cmake",
+		"/Users/tarikhajibsorensen/UiA/IKT203/exam/IKT203/Portfolio/build/SharedLib/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
